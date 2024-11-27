@@ -97,6 +97,33 @@ You can now visit your wagtail site at the URL provided by `fly`. We strongly re
 
 The database and user-uploaded media are stored in the attached volume. To save costs and improve efficiency, the app will automatically stop when not in use, but will automatically restart when the browser loads.
 
+#### Divio Cloud
+
+[![Deploy to Divio](https://docs.divio.com/deploy-to-divio.svg)](https://control.divio.com/app/new/?template_url=https://github.com/divio/getting-started-with-wagtail/archive/refs/heads/main.zip)
+
+Easily deploy your application to [Divio Cloud](https://www.divio.com/) using the steps below:
+
+1. **Getting Started**  
+   Follow the [Getting Started](#getting-started) instructions to set up your project locally.
+
+2. **Prepare Your Repository**  
+   Upload your project to GitHub or another Git provider.
+
+3. **Create a New Application**  
+   Log in to the [Divio Control Panel](https://control.divio.com/) and create a new application and
+
+   - Choose "**I already have a repository**.".
+   - Connect your Git provider and proceed by clicking "**Next**.".
+   - Give your application a suitable name and select the "**Free Trial**" plan to get started.
+
+5. **Configure a Database**
+   You need a [database](https://docs.divio.com/introduction/aldryn-django/django-05-database/) in order for the deployment to succeed. For a quick deployment, commit your local `db.sqlite3` database to the repository and proceed.
+
+4. **Deploy Your Application**  
+   From the "Environments" view, click the "**Deploy**" button. Once the deployment completes, access your site using the "Env URL" link.
+
+For a quick start, check out our [Getting Started with Wagtail](https://github.com/divio/getting-started-with-wagtail) template. It includes pre-configurations for PostgreSQL and Object Storage, ensuring a smooth deployment experience.
+
 ## Contributing
 
 To customize this template, you can either make changes directly or backport changes from a generated project (via the `wagtail start` command) by following these steps:
